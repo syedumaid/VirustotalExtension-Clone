@@ -43,7 +43,6 @@ async function checkURLWithVirusTotal(url) {
   });
 
 
-
 // Blocking suspicious URLs
 // chrome.declarativeNetRequest.updateDynamicRules({
 //   addRules: [{
