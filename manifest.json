@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Secure Browser Extension",
+  "version": "1.0",
+  "description": "Automatically scans URLs with VirusTotal and enforces HTTPS.",
+  "permissions": [
+    "declarativeNetRequest",
+     "declarativeNetRequestWithHostAccess",
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
